@@ -1,0 +1,322 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HealthConnect App - Your Rural Healthcare Companion</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            transition: all 0.3s ease;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="text-2xl font-bold gradient-text">HealthConnect</span>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="#features" class="text-gray-700 hover:text-blue-600">Features</a>
+                    <a href="#about" class="text-gray-700 hover:text-blue-600">About</a>
+                    <a href="#contact" class="text-gray-700 hover:text-blue-600">Contact</a>
+                    <button class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition duration-300">Download App</button>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-btn" class="text-gray-700 hover:text-blue-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div id="mobile-menu" class="md:hidden hidden bg-white border-t">
+                <a href="#features" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Features</a>
+                <a href="#about" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">About</a>
+                <a href="#contact" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">Contact</a>
+                <button class="block w-full text-left px-4 py-2 bg-blue-600 text-white hover:bg-blue-700">Download App</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero-bg text-white py-20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-5xl md:text-6xl font-bold mb-6">
+                Empowering Rural Healthcare with Technology
+            </h1>
+            <p class="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
+                HealthConnect bridges the healthcare gap in rural areas. Access medical advice, track health, and get care anytime - even offline.
+            </p>
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                    Start Free Trial
+                </button>
+                <button class="border-2 border-white text-white px-8 py-3 rounded-lg font-semibold hover:bg-white hover:text-blue-600 transition duration-300">
+                    Watch Demo
+                </button>
+            </div>
+            <div class="mt-10">
+                <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/95912974-68c2-421e-99b0-e3c9bb5dd0f6.png" alt="Digital health app interface showing symptom checker, chatbot, and health dashboard on a smartphone screen with rural Indian landscape in background featuring villages, doctors on call, and connected technology symbols" class="mx-auto rounded-lg shadow-2xl" style="max-width: 100%; height: auto;" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-gray-900 mb-4">Game-Changing Features</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Designed specifically for rural communities, our app offers comprehensive healthcare solutions at your fingertips.
+                </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/f195f063-8bc0-43ea-9c9a-7817b84e6fee.png" alt="Illustration of offline sync icon with cloud and arrow symbols representing data synchronization from device to cloud" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Offline Mode with Sync</h3>
+                    <p class="text-gray-600 mb-2">Input symptoms and logs offline, sync when connected. Never let poor network limit your care.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4dacc9ea-5522-40bf-9b66-f44285f02d6a.png" alt="Voice chat bubble with microphone icon in local Indian languages script, representing multilingual voice input and output" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Local Language Voice I/O</h3>
+                    <p class="text-gray-600 mb-2">Chatbot with voice recognition in regional languages, perfect for illiterate users and hands-free operation.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/09cab8b7-ba13-4779-967f-b359b64bd234.png" alt="Group of community health workers with stethoscopes and tablets, collaborating in rural health setting" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Community Health Integration</h3>
+                    <p class="text-gray-600 mb-2">Local workers assist patients, collect data, and escalate cases seamlessly through the app.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/7811cb15-0d2d-4327-b73a-ce44c94e1d35.png" alt="Game controller and trophy icons combined with heart symbol and coins, representing gamification and health rewards" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Gamification & Rewards</h3>
+                    <p class="text-gray-600 mb-2">Earn coins through health quizzes and games, redeem for consultation discounts and wellness programs.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/68a68b63-5e45-47e5-83d3-9b7635656c53.png" alt="Tiered pricing chart with rupees symbol and different colored tiers from basic to premium plans" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Affordable Subscriptions</h3>
+                    <p class="text-gray-600 mb-2">Free basic plan to premium - pay only for what you need with flexible payment options.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/48813e7d-5e5a-4bd8-902a-7e9d27ab6d5a.png" alt="Dashboard with health metrics, graphs, and AI insights icons on smart device screen" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">AI-Powered Dashboard</h3>
+                    <p class="text-gray-600 mb-2">Personalized insights, remote screenings, and proactive health monitoring powered by AI.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/44882376-cffd-422b-a026-72692c5b82e4.png" alt="Family tree icon with elderly, children, and adults representing family health management" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Family Health Management</h3>
+                    <p class="text-gray-600 mb-2">Manage profiles for entire family, schedule group consultations in rural joint-family setups.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/16e10016-442e-4ccc-a3af-252c6fbaf156.png" alt="Indian flag with health scheme logo and government seal symbolizing official integration" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Government Scheme Integration</h3>
+                    <p class="text-gray-600 mb-2">Direct access to AYUSHMAN Bharat, subsidized medicines, and free diagnostics through app.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/ad815ef7-f6ec-444f-916c-8cb45e9c86aa.png" alt="Video call screen with physiotherapy exercises and AI trainer avatar guiding movements" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Tele-Physiotherapy</h3>
+                    <p class="text-gray-600 mb-2">Live sessions and AI-guided exercises replace costly hospital visits for rehabilitation.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1b96bbf6-4f16-48f7-9c40-e21c94001a87.png" alt="Confidential chat bubble and therapy session icon with mental health symbolism" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Mental Health Support</h3>
+                    <p class="text-gray-600 mb-2">Confidential therapy, support groups, and resources addressing rural mental health stigma.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/bf62bcb5-5e9d-421c-95b0-ec22a9c95ef2.png" alt="GPS location marker connected to ambulance and family emergency contact icons" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Emergency SOS</h3>
+                    <p class="text-gray-600 mb-2">Instant GPS sharing with ambulances and family during emergencies for rapid response.</p>
+                </div>
+                <div class="feature-card bg-gray-50 p-6 rounded-xl shadow-md">
+                    <div class="text-blue-600 text-3xl mb-4">
+                        <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/1e1f3c5e-cc17-4749-ad82-236db6a43096.png" alt="QR code scanner scanning medicine box with checkmark indicating authenticity verification" style="width: 64px; height: 64px;" />
+                    </div>
+                    <h3 class="text-xl font-semibold text-gray-900 mb-3">Medicine Verification</h3>
+                    <p class="text-gray-600 mb-2">Scan QR codes to ensure genuine medicines, combating counterfeit drugs in rural areas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-gray-900 mb-6">About HealthConnect</h2>
+                    <p class="text-lg text-gray-600 mb-6">
+                        Born from the needs of rural India, HealthConnect revolutionizes healthcare access. We combine AI, voice technology, and local health worker integration to bring quality care to every village.
+                    </p>
+                    <p class="text-lg text-gray-600 mb-8">
+                        Our mission is to eliminate healthcare disparities through innovative technology, ensuring no one is left behind due to geography or connectivity challenges.
+                    </p>
+                    <div class="flex flex-wrap gap-4">
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="text-2xl font-bold text-blue-600">500K+</div>
+                            <div class="text-gray-600">Active Users</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="text-2xl font-bold text-blue-600">200+</div>
+                            <div class="text-gray-600">Hospitals Connected</div>
+                        </div>
+                        <div class="bg-white p-4 rounded-lg shadow-md text-center">
+                            <div class="text-2xl font-bold text-blue-600">95%</div>
+                            <div class="text-gray-600">Rural Coverage</div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/d88f3951-ec8d-4c73-b6b7-747300962546.png" alt="Healthcare professionals in rural setting collaborating with smartphone app interface displaying health data and patient consultations in traditional Indian village backdrop" class="rounded-lg shadow-2xl" style="width: 100%; height: auto;" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 hero-bg text-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-4xl font-bold mb-6">Ready to Transform Rural Healthcare?</h2>
+            <p class="text-xl mb-8">Join thousands of users taking control of their health today.</p>
+            <button class="bg-white text-blue-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition duration-300">
+                Get Started Free
+            </button>
+            <p class="mt-4 text-sm opacity-80">No credit card required • Available on iOS & Android</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 class="text-4xl font-bold text-gray-900 mb-12 text-center">Contact Us</h2>
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-semibold mb-4">Get in Touch</h3>
+                    <p class="text-gray-600 mb-8">
+                        Have questions about our app or want to partner with us? We'd love to hear from you.
+                    </p>
+                    <div class="space-y-4">
+                        <p><strong>Email:</strong> contact@healthconnect.in</p>
+                        <p><strong>Phone:</strong> +91-XXX-XXX-XXXX</p>
+                        <p><strong>Address:</strong> Bangalore, Karnataka, India</p>
+                    </div>
+                </div>
+                <div>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
+                            <input type="text" id="name" name="name" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
+                            <input type="email" id="email" name="email" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500">
+                        </div>
+                        <div>
+                            <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
+                            <textarea id="message" name="message" rows="4" class="mt-1 block w-full rounded-md border-gray-300 shadow-sm focus:border-blue-500 focus:ring-blue-500"></textarea>
+                        </div>
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-700 transition duration-300">
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <h4 class="text-xl font-semibold mb-4">HealthConnect</h4>
+                    <p class="text-gray-400">Empowering rural healthcare through innovative technology.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#features" class="hover:text-white">Features</a></li>
+                        <li><a href="#about" class="hover:text-white">About</a></li>
+                        <li><a href="#contact" class="hover:text-white">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Support</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Help Center</a></li>
+                        <li><a href="#" class="hover:text-white">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white">Terms of Service</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Follow Us</h4>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <span class="sr-only">Facebook</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854V15.562H7.078v-3.489H10.09v-2.66c0-3.048 1.812-4.724 4.564-4.724 1.312 0 2.686.236 2.686.236v2.965H15.32c-1.489 0-1.953.926-1.953 1.872v2.254h3.315l-.53 3.489h-2.785v8.365C19.612 23.027 24 18.063 24 12.073z"/></svg>
+                        </a>
+                        <a href="#" class="text-gray-400 hover:text-white text-xl">
+                            <span class="sr-only">Twitter</span>
+                            <svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24"><path d="M23.953 4.57a10 10 0 01-2.825.775 4.958 4.958 0 002.163-2.723c-.951.555-2.005.959-3.127 1.184a4.92 4.92 0 00-8.384 4.482C7.69 8.095 4.067 6.13 1.64 3.162a4.822 4.822 0 00-.666 2.475c0 1.71.87 3.213 2.188 4.096a4.904 4.904 0 01-2.228-.616v.06a4.923 4.923 0 003.946 4.827 4.996 4.996 0 01-2.212.085 4.936 4.936 0 004.604 3.417 9.867 9.867 0 01-6.102 2.105c-.39 0-.779-.023-1.17-.067a13.995 13.995 0 007.557 2.209c9.053 0 13.998-7.496 13.998-13.985 0-.21 0-.42-.015-.63A9.935 9.935 0 0024 4.59z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 border-t border-gray-800 pt-8 text-center">
+                <p class="text-gray-400">© 2024 HealthConnect. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Mobile Menu Script -->
+    <script>
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html>
+</content>
+</create_file>
+```
